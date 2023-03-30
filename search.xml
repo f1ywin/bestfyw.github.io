@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>2023书单</title>
+    <url>/bestfyw.github.io/2023/03/30/2023%E4%B9%A6%E5%8D%95/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>Linux创建精灵进程</title>
     <url>/bestfyw.github.io/2023/03/30/Linux%E5%88%9B%E5%BB%BA%E7%B2%BE%E7%81%B5%E8%BF%9B%E7%A8%8B/</url>
     <content><![CDATA[<h1 id="一、创建Daemon进程的目的"><a href="#一、创建Daemon进程的目的" class="headerlink" title="一、创建Daemon进程的目的"></a>一、创建Daemon进程的目的</h1><p>控制终端会由于某些原因（如断开终端连接）会发送一些信号，然而这些信号会因为接收进程处理或者缺省处理而使得进程中断退出。</p>
