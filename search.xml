@@ -27,7 +27,8 @@
         <category>个人博客</category>
       </categories>
       <tags>
-        <tag>Hexo NexT</tag>
+        <tag>Hexo</tag>
+        <tag>NexT</tag>
       </tags>
   </entry>
   <entry>
@@ -47,7 +48,8 @@
         <category>操作系统</category>
       </categories>
       <tags>
-        <tag>Linux c/cpp</tag>
+        <tag>Linux</tag>
+        <tag>c/cpp</tag>
       </tags>
   </entry>
 </search>
