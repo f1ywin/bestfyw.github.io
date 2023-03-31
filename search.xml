@@ -67,7 +67,7 @@
 <p>启动完成后，可在浏览器通过localhost:4000端口查看网页，页面显示相应的内容则表示本地安装成功</p>
 ]]></content>
       <categories>
-        <category>个人博客</category>
+        <category>博客搭建</category>
       </categories>
       <tags>
         <tag>Hexo</tag>
