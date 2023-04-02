@@ -99,9 +99,10 @@
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">PermitRootLogin <span class="built_in">yes</span></span><br></pre></td></tr></table></figure>
 
 <ol start="3">
-<li><p>重启ssh服务</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">/etc/init.d/ssh restart</span><br></pre></td></tr></table></figure></li>
+<li>重启ssh服务</li>
 </ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">/etc/init.d/ssh restart</span><br></pre></td></tr></table></figure>
+
 <p>完成后，即可以root账号登录</p>
 <p>未设置root密码或者忘记密码的，可以执行以下进行密码修改</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo passwd root</span><br></pre></td></tr></table></figure>
