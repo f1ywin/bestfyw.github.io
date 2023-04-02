@@ -88,7 +88,6 @@
 <h1 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h1><p>修改ssh的设置，打开允许以root账户登录的设置。</p>
 <span id="more"></span>
 
-
 <ol>
 <li>编辑该文件</li>
 </ol>
@@ -101,11 +100,9 @@
 
 <ol start="3">
 <li><p>重启ssh服务</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">/etc/init.d/ssh restart</span><br></pre></td></tr></table></figure>
-
-<p>完成后，即可以root账号登录</p>
-</li>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">/etc/init.d/ssh restart</span><br></pre></td></tr></table></figure></li>
 </ol>
+<p>完成后，即可以root账号登录</p>
 <p>未设置root密码或者忘记密码的，可以执行以下进行密码修改</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo passwd root</span><br></pre></td></tr></table></figure>
 
