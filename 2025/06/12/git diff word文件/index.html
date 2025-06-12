@@ -21,26 +21,26 @@
 
     <meta name="description" content="在git上使用Word原生比较工具进行Word文件的diff">
 <meta property="og:type" content="article">
-<meta property="og:title" content="git使用Word对Word文件进行diff">
-<meta property="og:url" content="http://f1ywin.github.io/bestfyw.github.io/2025/06/12/git%E4%BD%BF%E7%94%A8Word%E5%AF%B9Word%E6%96%87%E4%BB%B6%E8%BF%9B%E8%A1%8Cdiff/index.html">
+<meta property="og:title" content="git diff word文件">
+<meta property="og:url" content="http://f1ywin.github.io/bestfyw.github.io/2025/06/12/git%20diff%20word%E6%96%87%E4%BB%B6/index.html">
 <meta property="og:site_name" content="冯耀文的博客">
 <meta property="og:description" content="在git上使用Word原生比较工具进行Word文件的diff">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-06-12T07:19:44.000Z">
-<meta property="article:modified_time" content="2025-06-12T08:10:42.688Z">
+<meta property="article:modified_time" content="2025-06-12T08:20:13.703Z">
 <meta property="article:author" content="fywfeng">
 <meta property="article:tag" content="Git">
 <meta property="article:tag" content="Word">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://f1ywin.github.io/bestfyw.github.io/2025/06/12/git%E4%BD%BF%E7%94%A8Word%E5%AF%B9Word%E6%96%87%E4%BB%B6%E8%BF%9B%E8%A1%8Cdiff/">
+<link rel="canonical" href="http://f1ywin.github.io/bestfyw.github.io/2025/06/12/git%20diff%20word%E6%96%87%E4%BB%B6/">
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://f1ywin.github.io/bestfyw.github.io/2025/06/12/git%E4%BD%BF%E7%94%A8Word%E5%AF%B9Word%E6%96%87%E4%BB%B6%E8%BF%9B%E8%A1%8Cdiff/","path":"2025/06/12/git使用Word对Word文件进行diff/","title":"git使用Word对Word文件进行diff"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://f1ywin.github.io/bestfyw.github.io/2025/06/12/git%20diff%20word%E6%96%87%E4%BB%B6/","path":"2025/06/12/git diff word文件/","title":"git diff word文件"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>git使用Word对Word文件进行diff | 冯耀文的博客</title>
+<title>git diff word文件 | 冯耀文的博客</title>
   
 
 
@@ -139,7 +139,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#git%E4%BD%BF%E7%94%A8Word%E5%AF%B9Word%E6%96%87%E4%BB%B6%E8%BF%9B%E8%A1%8Cdiff"><span class="nav-text">git使用Word对Word文件进行diff</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BC%80%E5%A7%8B%E8%A1%8C%E5%8A%A8"><span class="nav-text">开始行动</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%B0%E5%BB%BA%E5%A4%84%E7%90%86%E8%84%9A%E6%9C%AC"><span class="nav-text">新建处理脚本</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%85%8D%E7%BD%AEgit"><span class="nav-text">配置git</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AF%95%E4%B8%80%E8%AF%95"><span class="nav-text">试一试</span></a></li></ol></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%BC%80%E5%A7%8B%E8%A1%8C%E5%8A%A8"><span class="nav-text">开始行动</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%B0%E5%BB%BA%E5%A4%84%E7%90%86%E8%84%9A%E6%9C%AC"><span class="nav-text">新建处理脚本</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%85%8D%E7%BD%AEgit"><span class="nav-text">配置git</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%95%E4%B8%80%E8%AF%95"><span class="nav-text">试一试</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BB%93%E8%AF%AD"><span class="nav-text">结语</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -200,7 +200,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://f1ywin.github.io/bestfyw.github.io/2025/06/12/git%E4%BD%BF%E7%94%A8Word%E5%AF%B9Word%E6%96%87%E4%BB%B6%E8%BF%9B%E8%A1%8Cdiff/">
+    <link itemprop="mainEntityOfPage" href="http://f1ywin.github.io/bestfyw.github.io/2025/06/12/git%20diff%20word%E6%96%87%E4%BB%B6/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/bestfyw.github.io/images/avatar.jpg">
@@ -213,12 +213,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="git使用Word对Word文件进行diff | 冯耀文的博客">
+      <meta itemprop="name" content="git diff word文件 | 冯耀文的博客">
       <meta itemprop="description" content="在git上使用Word原生比较工具进行Word文件的diff">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          git使用Word对Word文件进行diff
+          git diff word文件
         </h1>
 
         <div class="post-meta-container">
@@ -230,7 +230,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2025-06-12 15:19:44 / 修改时间：16:10:42" itemprop="dateCreated datePublished" datetime="2025-06-12T15:19:44+08:00">2025-06-12</time>
+      <time title="创建时间：2025-06-12 15:19:44 / 修改时间：16:20:13" itemprop="dateCreated datePublished" datetime="2025-06-12T15:19:44+08:00">2025-06-12</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -259,10 +259,10 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><h1 id="git使用Word对Word文件进行diff"><a href="#git使用Word对Word文件进行diff" class="headerlink" title="git使用Word对Word文件进行diff"></a>git使用Word对Word文件进行diff</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>写论文时，常做文件的变更，有时候修改时容易手误修改到其他正常的地方。</p>
+    <div class="post-body" itemprop="articleBody"><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>写论文时，常做文件的变更，有时候修改时容易手误修改到其他正常的地方。</p>
 <p>为了解决以上问题，考虑将Word文件放到Git上进行版本管理，方便追溯与版本对比。</p>
 <p>但存在一个问题为，git不支持直接对Word文件进行diff，所以考虑自定义git diff工具，该工具能直接调用word的对比工具，方便查看文件的修改。</p>
-<h2 id="开始行动"><a href="#开始行动" class="headerlink" title="开始行动"></a>开始行动</h2><h3 id="新建处理脚本"><a href="#新建处理脚本" class="headerlink" title="新建处理脚本"></a>新建处理脚本</h3><p>该脚本的主要作用为，调用word接口，创建一个比较文件出来</p>
+<h1 id="开始行动"><a href="#开始行动" class="headerlink" title="开始行动"></a>开始行动</h1><h2 id="新建处理脚本"><a href="#新建处理脚本" class="headerlink" title="新建处理脚本"></a>新建处理脚本</h2><p>该脚本的主要作用为，调用word接口，创建一个比较文件出来</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br></pre></td><td class="code"><pre><span class="line">&#x27; Word文档比较工具</span><br><span class="line">&#x27; 用法: cscript compare.vbs 原文档.doc 新文档.doc</span><br><span class="line"></span><br><span class="line">&#x27; 1. 检查参数数量</span><br><span class="line">If WScript.Arguments.Count &lt;&gt; 2 Then</span><br><span class="line">    WScript.Echo &quot;Usage: cscript compare.vbs file1.doc file2.doc&quot;</span><br><span class="line">    WScript.Echo &quot;example: cscript compare.vbs a.doc b.doc&quot;</span><br><span class="line">    WScript.Quit</span><br><span class="line">End If</span><br><span class="line"></span><br><span class="line">WScript.Echo &quot;VBScript run,param1: &quot; &amp; WScript.Arguments(0)</span><br><span class="line">WScript.Echo &quot;VBScript run,param2: &quot; &amp; WScript.Arguments(1)</span><br><span class="line"></span><br><span class="line">&#x27; 2. 获取文件路径</span><br><span class="line">file1 = WScript.Arguments(0)</span><br><span class="line">file2 = WScript.Arguments(1)</span><br><span class="line"></span><br><span class="line">&#x27; 3. 创建Word应用程序对象</span><br><span class="line">On Error Resume Next</span><br><span class="line">Set wordApp = CreateObject(&quot;Word.Application&quot;)</span><br><span class="line">If Err.Number &lt;&gt; 0 Then</span><br><span class="line">    WScript.Echo &quot;error: can&#x27;t create Word app object&quot;</span><br><span class="line">    WScript.Echo &quot;make sure already installed Microsoft Word&quot;</span><br><span class="line">    WScript.Quit</span><br><span class="line">End If</span><br><span class="line">On Error GoTo 0</span><br><span class="line"></span><br><span class="line">wordApp.Visible = True &#x27; 确保Word可见</span><br><span class="line"></span><br><span class="line">&#x27; 4. 打开两个文档</span><br><span class="line">On Error Resume Next</span><br><span class="line">Set doc1 = wordApp.Documents.Open(file1)</span><br><span class="line">If Err.Number &lt;&gt; 0 Then</span><br><span class="line">    WScript.Echo &quot;error: can&#x27;t open file &quot; &amp; file1</span><br><span class="line">    wordApp.Quit</span><br><span class="line">    WScript.Quit</span><br><span class="line">End If</span><br><span class="line"></span><br><span class="line">Set doc2 = wordApp.Documents.Open(file2)</span><br><span class="line">If Err.Number &lt;&gt; 0 Then</span><br><span class="line">    WScript.Echo &quot;error: can&#x27;t open file &quot; &amp; file2</span><br><span class="line">    doc1.Close False</span><br><span class="line">    wordApp.Quit</span><br><span class="line">    WScript.Quit</span><br><span class="line">End If</span><br><span class="line">On Error GoTo 0</span><br><span class="line"></span><br><span class="line">&#x27; 5. 比较文档（开启所有比较选项）</span><br><span class="line">&#x27; 参数说明：</span><br><span class="line">&#x27; doc1 - 原文档对象</span><br><span class="line">&#x27; doc2 - 修订文档对象</span><br><span class="line">&#x27; 2 - wdCompareTargetNew (比较目标设为新文档)</span><br><span class="line">&#x27; 0 - wdGranularityWordLevel</span><br><span class="line">&#x27; 后面8个True对应所有比较选项</span><br><span class="line">wordApp.CompareDocuments doc1, doc2, 2, 0, True, True, True, True, True, True, True, True</span><br><span class="line"></span><br><span class="line">&#x27; 6. 比较完成后关闭原文档和修订文档</span><br><span class="line">On Error Resume Next</span><br><span class="line">doc1.Close False</span><br><span class="line">doc2.Close False</span><br><span class="line">On Error GoTo 0</span><br><span class="line"></span><br><span class="line">&#x27; 7. 清理资源</span><br><span class="line">Set doc1 = Nothing</span><br><span class="line">Set doc2 = Nothing</span><br><span class="line">Set wordApp = Nothing</span><br><span class="line"></span><br><span class="line">WScript.Echo &quot;compare done.&quot;</span><br></pre></td></tr></table></figure>
 
 <p>当然这个脚本也可以直接使用，可以不配置到git中，配置到git中主要是为了比较工作区和暂存区的word文件</p>
@@ -270,7 +270,7 @@
 <p>举例：</p>
 <figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cscript compare.vbs <span class="string">&quot;C:\Users\fywfeng\Desktop\bachelor-degree\a.doc&quot;</span> <span class="string">&quot;C:\Users\fywfeng\Desktop\bachelor-degree\b.doc&quot;</span></span><br></pre></td></tr></table></figure>
 
-<h3 id="配置git"><a href="#配置git" class="headerlink" title="配置git"></a>配置git</h3><p>直接在用户目录修改git的全局配置</p>
+<h2 id="配置git"><a href="#配置git" class="headerlink" title="配置git"></a>配置git</h2><p>直接在用户目录修改git的全局配置</p>
 <p>一般路径位置：C:\Users\用户名</p>
 <p>文件名：.gitconfig</p>
 <p>新增内容</p>
@@ -281,7 +281,7 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[alias]</span><br><span class="line">    diffword = difftool --tool=worddiff --no-prompt</span><br></pre></td></tr></table></figure>
 
 <p>当然这里也可以选择使用git命令来加，需要注意路径需要加转义，这里就不过多赘述了。</p>
-<h3 id="试一试"><a href="#试一试" class="headerlink" title="试一试"></a>试一试</h3><p>执行指令</p>
+<h2 id="试一试"><a href="#试一试" class="headerlink" title="试一试"></a>试一试</h2><p>执行指令</p>
 <figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git difftool <span class="literal">--tool</span>=worddiff <span class="literal">--no-prompt</span> 文件名</span><br></pre></td></tr></table></figure>
 
 <p>或者使用alias的命令</p>
@@ -290,6 +290,8 @@
 <p>如果目标文件存在工作区与暂存区的变更，则会弹出对比文件，如果不存在变更则不会弹出</p>
 <p>举个栗子</p>
 <figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">E:\SelfFiles\flod&gt;git diffword dir\task.doc</span><br><span class="line">Microsoft (<span class="built_in">R</span>) Windows Script Host Version <span class="number">5.812</span></span><br><span class="line">Copyright (C) Microsoft Corporation. All rights reserved.</span><br><span class="line"></span><br><span class="line">VBScript run,param1: C:\Users\fywfeng\AppData\Local\Temp/git<span class="literal">-blob-a27680</span>/task.doc</span><br><span class="line">VBScript run,param2: E:/SelfFiles/flod/<span class="built_in">dir</span>/task.doc</span><br><span class="line"><span class="built_in">compare</span> done.</span><br></pre></td></tr></table></figure>
+
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>仍有很多可以改进的地方，后续有用到的地方再更新迭代</p>
 
     </div>
 
